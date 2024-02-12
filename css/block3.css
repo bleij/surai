@@ -1,0 +1,22 @@
+body {
+
+}
+
+#imageRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.imageContainer {
+    text-align: center;
+
+}
+
+.imageContainer img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
