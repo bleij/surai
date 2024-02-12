@@ -1,11 +1,12 @@
 body {
     margin: 0;
     font-family: DotGothic16, sans-serif;
-    background-color: cornsilk;
+    background-color: #000000;
+    color: white
 }
 
 h1 {
-  color: blue;
+  color: #ffffff;
 }
 header {
     background-color: #0000ff;
@@ -39,5 +40,5 @@ footer {
     bottom: 0;
     position: fixed;
     left: 0;
-    height: 50px;
+    height: 20px;
 }

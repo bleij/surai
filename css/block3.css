@@ -2,21 +2,38 @@ body {
 
 }
 
-#imageRow {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.imageContainer {
+figure {
     text-align: center;
-
+    margin-right: 10px;
 }
 
-.imageContainer img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 10px;
+.image-row {
+    display: flex;
+}
+
+.image-row img {
+    max-width: 90%;
+    margin-right: 50px;
+}
+
+.text-block {
+    display: flex;
+    justify-content: space-between; /* Распределение пространства между элементами */
+    align-items: center;
+}
+
+.text-with-image,
+.text-without-image {
+    text-align: center;
+}
+
+.text-with-image img {
+    max-width: 70%; /* Чтобы изображения не выходили за пределы контейнера */
+    margin-bottom: 10px; /* Расстояние между изображением и текстом, по желанию */
+}
+
+.text-with-image p,
+.text-without-image p {
+  width: 400px; /* Фиксированная ширина текста */
+  margin: 0 auto; /* Центрирование текста в блоке */
 }
