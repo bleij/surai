@@ -1,0 +1,10 @@
+.section_top {
+  padding: 20px; /* Добавим внутренние отступы для контента внутри секции */
+            background-image: url('../img/background.png'); /* Путь к вашему фоновому рисунку */
+            background-size: cover; /* Растягиваем рисунок на всю площадь секции */
+            background-position: center; /* Центрируем рисунок */
+            height: 400px; /* Задаем высоту секции */
+            color: white; /* Устанавливаем белый цвет текста для контраста с фоном */
+            filter: contrast(40%) brightness(40%);
+
+}

@@ -3,37 +3,42 @@ body {
 }
 
 figure {
-    text-align: center;
-    margin-right: 10px;
+  text-align: center;
+  margin-right: 10px;
 }
 
+.big_text {
+  font-size: x-large
+
+}
 .image-row {
-    display: flex;
+  display: flex;
 }
 
 .image-row img {
-    max-width: 90%;
-    margin-right: 50px;
+  max-width: 90%;
+  margin-right: 50px;
 }
 
 .text-block {
-    display: flex;
-    justify-content: space-between; /* Распределение пространства между элементами */
-    align-items: center;
+  display: flex;
+  justify-content: space-between; /* Распределение пространства между элементами */
+  align-items: center;
 }
 
 .text-with-image,
 .text-without-image {
-    text-align: center;
+  text-align: center;
 }
 
 .text-with-image img {
-    max-width: 70%; /* Чтобы изображения не выходили за пределы контейнера */
-    margin-bottom: 10px; /* Расстояние между изображением и текстом, по желанию */
+  max-width: 60%; /* Чтобы изображения не выходили за пределы контейнера */
+  margin-bottom: 10px; /* Расстояние между изображением и текстом, по желанию */
 }
 
-.text-with-image p,
-.text-without-image p {
+.text-with-image p, h3,
+.text-without-image p, h3 {
   width: 400px; /* Фиксированная ширина текста */
   margin: 0 auto; /* Центрирование текста в блоке */
+  margin-bottom: 50px;
 }
