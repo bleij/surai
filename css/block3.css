@@ -8,21 +8,25 @@ figure {
 }
 
 .big_text {
-  font-size: x-large
-
+  font-size: x-large;
+  color: white;
 }
 .image-row {
   display: flex;
+  justify-content: space-around;
 }
 
 .image-row img {
-  max-width: 90%;
-  margin-right: 50px;
+  max-width: 100%;
+}
+
+.image-row figcaption {
+  margin-top: 10px;
 }
 
 .text-block {
   display: flex;
-  justify-content: space-between; /* Распределение пространства между элементами */
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -32,13 +36,13 @@ figure {
 }
 
 .text-with-image img {
-  max-width: 60%; /* Чтобы изображения не выходили за пределы контейнера */
-  margin-bottom: 10px; /* Расстояние между изображением и текстом, по желанию */
+  max-width: 60%;
+  margin-bottom: 10px;
 }
 
 .text-with-image p, h3,
 .text-without-image p, h3 {
-  width: 400px; /* Фиксированная ширина текста */
-  margin: 0 auto; /* Центрирование текста в блоке */
+  width: 400px;
+  margin: auto;
   margin-bottom: 50px;
 }

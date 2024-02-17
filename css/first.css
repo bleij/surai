@@ -1,10 +1,36 @@
 .section_top {
-  padding: 20px; /* Добавим внутренние отступы для контента внутри секции */
-            background-image: url('../img/background.png'); /* Путь к вашему фоновому рисунку */
-            background-size: cover; /* Растягиваем рисунок на всю площадь секции */
-            background-position: center; /* Центрируем рисунок */
-            height: 400px; /* Задаем высоту секции */
-            color: white; /* Устанавливаем белый цвет текста для контраста с фоном */
-            filter: contrast(40%) brightness(40%);
-
+  margin-top: 60px;
+  position: relative;
+  height: 700px;
 }
+
+.section_top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%) contrast(90%);
+  z-index: -1;
+}
+
+.section_top h1 {
+  color: white;
+  font-size: xxx-large;
+  width: 50%;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.section_top p {
+  color: white;
+  font-size: xxx-large;
+  width: 50%;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
