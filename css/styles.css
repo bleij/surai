@@ -2,12 +2,18 @@ body {
   margin: 0;
   font-family: DotGothic16, sans-serif;
   background-color: #000000;
-  color: white
+  color: white;
 }
 
 h1 {
   color: #ffffff;
   font-weight: normal;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: xxx-large;
 }
 
 header {
@@ -24,6 +30,7 @@ header {
   line-height: 60px;
   box-sizing: border-box;
   background-color: #0000ff;
+  z-index: 1000;
 }
 
 .navbar a {
@@ -38,6 +45,7 @@ main {
 
 section {
   margin-bottom: 2em;
+  margin-top: 6em;
 }
 
 footer {
@@ -47,7 +55,48 @@ footer {
   text-align: center;
   width: 100%;
   bottom: 0;
-  position: fixed;
   left: 0;
   height: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 30px 60px;
+  font-size: xx-large;
+  border: 2px solid #0000ff;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #0000ff;
+}
+
+.small-button {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: large;
+  font-family: DotGothic16;
+  border: 2px solid #0000ff;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: black;
+  transition: background-color 0.3s ease;
+  margin-top: 10px
+}
+
+.small-button:hover {
+  background-color: #0000ff;
 }

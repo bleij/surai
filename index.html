@@ -12,6 +12,7 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/block3.css">
   <link rel="stylesheet" href="css/first.css">
@@ -21,27 +22,42 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="manifest" href="site.webmanifest">
+
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 <header>
   <div class="navbar">
-    <a href="#home">Главная</a>
-    <a href="#concept">Концепция</a>
-    <a href="#examples">Примеры работ</a>
-    <a href="#faq">Вопросы и ответы</a>
-    <a href="#auction">Аукцион</a>
+    <a href="#home" onclick="scrollToTop()">Главная</a>
+    <a class="nav-link" href="#concept">Концепция</a>
+    <a class="nav-link" href="#examples">Примеры работ</a>
+    <a class="nav-link" href="#faq">Вопросы и ответы</a>
+    <a class="nav-link" href="#auction">Аукцион</a>
+    <a class="nav-link" href="#order">Заказать</a>
   </div>
 </header>
 
 <main>
-  <section class="section_top" id="home">
+  <section class="section_top" id="main">
     <h1>Привет, это Шурай.</h1>
     <p>Мы просто дарим воспоминания. На футболке, твоя мысль.</p>
   </section>
 
-  <section id="concept">
+  <script data-b24-form="click/4/slnsy7" data-skip-moving="true">(function (w, d, u) {
+    var s = d.createElement('script');
+    s.async = true;
+    s.src = u + '?' + (Date.now() / 180000 | 0);
+    var h = d.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(s, h);
+  })(window, document, 'https://cdn-ru.bitrix24.ru/b28486918/crm/form/loader_4.js');</script>
+  <div class="button-container">
+    <a href="#" class="custom-button">Заказать</a>
+  </div>
+
+  <div id="concept"></div>
+  <section>
     <h2>Концепция</h2>
     <div class="text-block">
       <div class="text-with-image">
@@ -70,31 +86,86 @@
           Это добавляет футболке исключительно особую энергию!</p>
       </div>
     </div>
+
+    <div id="examples"></div>
+  </section>
+  <h2>Примеры работ</h2>
+
+  <div class="image-row">
+    <figure>
+      <img src="img/batyrs.jpeg" alt="Image 1">
+      <figcaption>БАТЫРЫ В СТИЛЕ "СУПЕРМАТИЗМ"</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/black%20holmes.jpeg" alt="Image 2">
+      <figcaption>ЧЕРНЫЙ ХОЛМС С АПЕЛЬСИНАМИ</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/postcard.jpeg" alt="Image 3">
+      <figcaption>ПОЧТОВАЯ МАРКА АЛМАТЫ</figcaption>
+    </figure>
+  </div>
   </section>
 
-  <section id="examples">
-    <h2>Примеры работ</h2>
-
-    <div class="image-row">
-      <figure>
-        <img src="img/batyrs.jpeg" alt="Image 1">
-        <figcaption>БАТЫРЫ В СТИЛЕ "СУПЕРМАТИЗМ"</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/black%20holmes.jpeg" alt="Image 2">
-        <figcaption>ЧЕРНЫЙ ХОЛМС С АПЕЛЬСИНАМИ</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/postcard.jpeg" alt="Image 3">
-        <figcaption>ПОЧТОВАЯ МАРКА АЛМАТЫ</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="faq">
+  <div id="faq"></div>
+  <section>
     <h2>Вопросы и ответы</h2>
+    <script src="js/app.js"></script>
+
+    <div class="question-container" id="question1">
+      <div class="question">Если мне не понравится результат?</div>
+      <button class="toggle-btn small-button" onclick="toggleAnswer('question1')">Показать ответ</button>
+      <div class="answer">Если вам не понравится ваша футболка, мы вернем вам деньги - если с момента получения футболки
+        не прошло более 14 дней. После возврата средств ваша футболка выставляется на аукцион.
+      </div>
+    </div>
+
+    <div class="question-container" id="question2">
+      <div class="question">Можно ли поменять футболку (размер/цвет)?</div>
+      <button class="toggle-btn small-button" onclick="toggleAnswer('question2')">Показать ответ</button>
+      <div class="answer">К сожалению, нет. Каждая футболка выпускается в единственном экземпляре и не подлежит
+        дублированию. После изготовления все файлы уничтожаются. Вы можете вернуть футболку на аукцион и/или заказать
+        новую, с таким же запросом, но результат может отличаться.
+      </div>
+    </div>
+
+    <div class="question-container" id="question3">
+      <div class="question">Как работает аукцион?</div>
+      <button class="toggle-btn small-button" onclick="toggleAnswer('question3')">Показать ответ</button>
+      <div class="answer">Аукцион реализован в анонимном варианте: все футболки, выставленные на аукционе имеют
+        фиксированную начальную стоимость, но не отображают количество и суммы ставок, только срок торгов. По окончанию
+        срока, футболка уйдет последнему подтвердившему наивысшую ставку человеку. Вы не будете точно знать, является ли
+        ваша ставка последней. В случае, если есть две или более максимальных ставок с одним номиналом, победитель будет
+        выбран случайным образом.
+      </div>
+    </div>
+
+    <div class="question-container" id="question4">
+      <div class="question">Я хочу заказать в подарок парные футболки, это возможно?</div>
+      <button class="toggle-btn small-button" onclick="toggleAnswer('question4')">Показать ответ</button>
+      <div class="answer">К сожалению, нет. Даже в качестве исключения - наши футболки не могут существовать в более,
+        чем одном экземпляре. Но вы можете попросить менеджера обработать запрос так, чтобы результаты были максимально
+        похожи.
+      </div>
+    </div>
+
+    <div class="question-container" id="question5">
+      <div class="question">Можно создать картинку самому или увидеть ее заранее?</div>
+      <button class="toggle-btn small-button" onclick="toggleAnswer('question5')">Показать ответ</button>
+      <div class="answer">К сожалению, нет! Картинки генерируются по вашему запросу, который обрабатывает наш дизайнер.
+        После подтверждения заказа, запрос поменять нельзя.
+      </div>
+    </div>
+
+    <div class="question-container" id="question6">
+      <div class="question">Может ли картинка быть без фона?</div>
+      <button class="toggle-btn small-button" onclick="toggleAnswer('question6')">Показать ответ</button>
+      <div class="answer">Да, это зависит от вашего запроса. Все картинки наносятся в одном месте, на спине или на
+        груди.
+      </div>
+    </div>
 
   </section>
 
@@ -106,17 +177,31 @@
 
 </main>
 
+<script src="js/app.js"></script>
+<script>
+  (function (w, d, u) {
+    const s = d.createElement('script');
+    s.async = true;
+    s.src = u + '?' + (Date.now() / 60000 | 0);
+    const h = d.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(s, h);
+  })(window, document, 'https://cdn-ru.bitrix24.ru/b28486918/crm/site_button/loader_2_e8qycs.js');
+</script>
+
+<section id="order">
+  <script data-b24-form="inline/4/slnsy7" data-skip-moving="true">(function (w, d, u) {
+    var s = d.createElement('script');
+    s.async = true;
+    s.src = u + '?' + (Date.now() / 180000 | 0);
+    var h = d.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(s, h);
+  })(window, document, 'https://cdn-ru.bitrix24.ru/b28486918/crm/form/loader_4.js');</script>
+</section>
+
 <footer>
 
 </footer>
 
-<script src="js/app.js"></script>
-<script>
-        (function(w,d,u){
-                const s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-                const h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://cdn-ru.bitrix24.ru/b28486918/crm/site_button/loader_2_e8qycs.js');
-</script>
 </body>
 
 </html>
