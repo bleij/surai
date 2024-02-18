@@ -12,6 +12,8 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/block3.css">
@@ -23,6 +25,7 @@
 
   <link rel="manifest" href="site.webmanifest">
 
+  <script src="js/app.js"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -34,8 +37,8 @@
     <a class="nav-link" href="#concept">Концепция</a>
     <a class="nav-link" href="#examples">Примеры работ</a>
     <a class="nav-link" href="#faq">Вопросы и ответы</a>
-    <a class="nav-link" href="#auction">Аукцион</a>
     <a class="nav-link" href="#order">Заказать</a>
+    <a href="auction.html">Аукцион</a>
   </div>
 </header>
 
@@ -53,7 +56,7 @@
     h.parentNode.insertBefore(s, h);
   })(window, document, 'https://cdn-ru.bitrix24.ru/b28486918/crm/form/loader_4.js');</script>
   <div class="button-container">
-    <a href="#" class="custom-button">Заказать</a>
+    <a class="custom-button">Заказать</a>
   </div>
 
   <div id="concept"></div>
@@ -107,13 +110,10 @@
       <figcaption>ПОЧТОВАЯ МАРКА АЛМАТЫ</figcaption>
     </figure>
   </div>
-  </section>
 
   <div id="faq"></div>
   <section>
-    <h2>Вопросы и ответы</h2>
-    <script src="js/app.js"></script>
-
+    <h2>Часто задаваемые вопросы:</h2>
     <div class="question-container" id="question1">
       <div class="question">Если мне не понравится результат?</div>
       <button class="toggle-btn small-button" onclick="toggleAnswer('question1')">Показать ответ</button>
@@ -166,15 +166,7 @@
         груди.
       </div>
     </div>
-
   </section>
-
-  <section id="auction">
-    <h2>Аукцион</h2>
-
-  </section>
-
-
 </main>
 
 <script src="js/app.js"></script>

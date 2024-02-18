@@ -1,16 +1,19 @@
 body {
-
+  margin: 0;
+  padding: 0;
 }
 
-figure {
+figure img {
   text-align: center;
-  margin-right: 10px;
+  max-height: 600px;
+  object-fit: cover;
 }
 
 .big_text {
   font-size: x-large;
   color: white;
 }
+
 .image-row {
   display: flex;
   justify-content: space-around;
@@ -46,3 +49,10 @@ figure {
   margin: auto;
   margin-bottom: 50px;
 }
+
+.timer_container {
+  text-align: center;
+  font-size: 150px;
+  margin-bottom: 30px;
+}
+
