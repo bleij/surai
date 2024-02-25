@@ -9,11 +9,6 @@ figure img {
   object-fit: cover;
 }
 
-.big_text {
-  font-size: x-large;
-  color: white;
-}
-
 .image-row {
   display: flex;
   justify-content: space-around;
@@ -30,7 +25,7 @@ figure img {
 .text-block {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: start;
 }
 
 .text-with-image,
@@ -52,7 +47,7 @@ figure img {
 
 .timer_container {
   text-align: center;
-  font-size: 150px;
+  font-size: 90px;
   margin-bottom: 30px;
 }
 

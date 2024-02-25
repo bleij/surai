@@ -1,0 +1,116 @@
+body {
+  font-family: DotGothic16, sans-serif;
+  background-color: #ffe1cc;
+  color: #ff7189;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+h1 {
+  color: #ffe1cc;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: xxx-large;
+}
+
+header {
+  background-color: #ffc0cb;
+  transition: background-color 5s ease;
+}
+
+.navbar {
+  background-color: #ffc0cb;
+  transition: background-color 5s ease;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: x-large;
+  transition: color 5s ease;
+}
+
+footer {
+  background-color: #ffc0cb;
+  color: #fff;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+.custom-button {
+  border: 2px solid #ff7189;
+  color: #ff7189;
+  transition: border 5s ease, color 5s ease;
+
+}
+
+.custom-button:hover {
+  background-color: #ff7189;
+  color: #fff;
+  transition: background-color 5s ease, color 5s ease;
+
+}
+
+.small-button {
+  color: #ff7189;
+  background-color: #ffc0cb;
+  border: 2px solid #ff7189;
+  transition: border 5s ease, background-color 5s ease, color 5s ease;
+
+}
+
+.small-button:hover {
+  background-color: #ff7189;
+  color: #fff;
+  transition: background-color 5s ease, color 5s ease;
+
+}
+
+.big_text {
+  color: #ff7189;
+  transition: color 5s ease;
+
+}
+
+.section_top h1,
+.section_top p {
+  color: #ff7189;
+  font-size: xxx-large;
+  transition: color 5s ease;
+
+}
+
+.question {
+  color: #ff7189;
+  font-size: xx-large;
+  border: 1px solid #ff7189;
+  transition: border 5s ease, color 5s ease;
+
+}
+
+.answer {
+  color: #ff7189;
+  border: 1px solid #ff7189;
+  transition: border 5s ease, color 5s ease;
+
+}
+
+#floating-menu button {
+  background-color: #0000ff;
+  color: #fff;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+#floating-menu {
+  background-color: #000000;
+}
+
+.section_top::before {
+  filter: invert(72%) sepia(10%) saturate(1115%) hue-rotate(304deg) brightness(107%) contrast(121%);
+  transition: filter 5s ease;
+}
+
+.icon {
+  filter: invert(72%) sepia(10%) saturate(1115%) hue-rotate(304deg) brightness(107%) contrast(121%);
+  transition: filter 5s ease;
+}

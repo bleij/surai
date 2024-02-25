@@ -1,0 +1,109 @@
+body {
+  font-family: DotGothic16, sans-serif;
+  background-color: #000000;
+  color: white;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: normal;
+  transition: color 5s ease;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: xxx-large;
+}
+
+header {
+  background-color: #0000ff;
+  transition: background-color 5s ease;
+}
+
+.navbar {
+  background-color: #0000ff;
+  transition: background-color 5s ease;
+}
+
+.navbar a {
+  color: white;
+  font-size: x-large;
+  transition: color 5s ease;
+}
+
+footer {
+  background-color: #0000ff;
+  color: white;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+.custom-button {
+  border: 2px solid #0000ff;
+  color: #ffffff;
+  transition: border 5s ease, color 5s ease;
+}
+
+.custom-button:hover {
+  background-color: #0000ff;
+  color: #fff;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+.small-button {
+  color: #ffffff;
+  background-color: black;
+  border: 2px solid #0000ff;
+  transition: border 5s ease, background-color 5s ease, color 5s ease;
+}
+
+.small-button:hover {
+  background-color: #0000ff;
+  color: #fff;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+.big_text {
+  color: white;
+  transition: color 5s ease;
+}
+
+.section_top h1,
+.section_top p {
+  color: white;
+  font-size: xxx-large;
+  transition: color 5s ease;
+}
+
+.question {
+  color: #0000ff;
+  font-size: xx-large;
+  border: 1px solid #0000ff;
+  transition: border 5s ease, color 5s ease;
+}
+
+.answer {
+  color: #0000ff;
+  border: 1px solid #0000ff;
+  transition: border 5s ease, color 5s ease;
+}
+
+#floating-menu button {
+  background-color: #ff7189;
+  color: #ffffff;
+  transition: background-color 5s ease, color 5s ease;
+}
+
+#floating-menu {
+  background-color: #ffdab9;
+}
+
+.icon {
+  filter: invert(8%) sepia(99%) saturate(6774%) hue-rotate(247deg) brightness(108%) contrast(146%);
+  transition: filter 5s ease;
+}
+
+.section_top::before {
+  filter: invert(8%) sepia(99%) saturate(6774%) hue-rotate(247deg) brightness(108%) contrast(146%);
+  transition: filter 5s ease;
+}
