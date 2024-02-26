@@ -91,7 +91,7 @@ footer {
 .answer {
   color: #ff7189;
   border: 1px solid #ff7189;
-  transition: border 5s ease, color 5s ease;
+  transition: border 5s ease, color 5s ease, max-height 1.0s ease-in-out;
 
 }
 

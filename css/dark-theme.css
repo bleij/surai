@@ -54,13 +54,13 @@ footer {
   color: #ffffff;
   background-color: black;
   border: 2px solid #0000ff;
-  transition: border 5s ease, background-color 5s ease, color 5s ease;
+  transition: border 5s ease, color 5s ease;
 }
 
 .small-button:hover {
   background-color: #0000ff;
   color: #fff;
-  transition: background-color 5s ease, color 5s ease;
+  transition: color 5s ease;
 }
 
 .big_text {
@@ -76,16 +76,16 @@ footer {
 }
 
 .question {
-  color: #0000ff;
+  color: #ffffff;
   font-size: xx-large;
   border: 1px solid #0000ff;
   transition: border 5s ease, color 5s ease;
 }
 
 .answer {
-  color: #0000ff;
+  color: #ffffff;
   border: 1px solid #0000ff;
-  transition: border 5s ease, color 5s ease;
+  transition: border 5s ease, color 5s ease, max-height 1.0s ease-in-out;
 }
 
 #floating-menu button {
